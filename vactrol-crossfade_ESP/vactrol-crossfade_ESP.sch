@@ -1,0 +1,714 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:vactrol-crossfade_ESP-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM358 U1
+U 1 1 57E6CEAD
+P 5700 2600
+F 0 "U1" H 5650 2800 50  0000 L CNN
+F 1 "LM358" H 5650 2350 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 5700 2600 50  0001 C CNN
+F 3 "" H 5700 2600 50  0000 C CNN
+	1    5700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358 U1
+U 2 1 57E6CED0
+P 5700 3850
+F 0 "U1" H 5650 4050 50  0000 L CNN
+F 1 "LM358" H 5650 3600 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 5700 3850 50  0001 C CNN
+F 3 "" H 5700 3850 50  0000 C CNN
+	2    5700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 57E6CF3D
+P 4500 3400
+F 0 "R3" H 4530 3420 50  0000 L CNN
+F 1 "1k" H 4530 3360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4500 3400 50  0001 C CNN
+F 3 "" H 4500 3400 50  0000 C CNN
+F 4 "Panasonic" H 4500 3400 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1001V" H 4500 3400 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1001V" H 4500 3400 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1001V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDo863kudeytFY%3d" H 4500 3400 60  0001 C CNN "[1] Dist Source"
+	1    4500 3400
+	0    -1   -1   0   
+$EndComp
+Text Label 5150 2700 0    60   ~ 0
+VREF
+Text Label 5150 3750 0    60   ~ 0
+VREF
+$Comp
+L Led_Small D2
+U 1 1 57E6D166
+P 7050 4000
+F 0 "D2" H 6950 3900 50  0000 L CNN
+F 1 "Red" H 6950 4100 50  0000 L CNN
+F 2 "LEDs:LED_0805" V 7050 4000 50  0001 C CNN
+F 3 "" V 7050 4000 50  0000 C CNN
+F 4 "Kingbright" H 7050 4000 60  0001 C CNN "Mfr"
+F 5 "AP2012EC" H 7050 4000 60  0001 C CNN "Mfr Part No"
+F 6 "604-AP2012EC" H 7050 4000 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/Search/ProductDetail.aspx?qs=VdjlWU%2fzoOFeVwl4qeUhTA%3d%3d" H 7050 4000 60  0001 C CNN "[1] Dist Source"
+	1    7050 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Photores R13
+U 1 1 57E6D16A
+P 7450 4150
+F 0 "R13" V 7530 4150 50  0000 C CNN
+F 1 "Photores" V 7660 4150 50  0000 C TNN
+F 2 "Opto-Devices_4b11b4:Photocell_5528CDS" V 7380 4150 50  0001 C CNN
+F 3 "" H 7450 4150 50  0000 C CNN
+F 4 "unknown" H 7450 4150 60  0001 C CNN "Mfr"
+F 5 "5528CDS" H 7450 4150 60  0001 C CNN "Mfr Part No"
+F 6 "http://www.ebay.com/itm/271591239748?_trksid=p2059210.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" H 7450 4150 60  0001 C CNN "[1] Dist Source"
+F 7 "or Amazon" H 7450 4150 60  0001 C CNN "[2] Dist Source"
+	1    7450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R11
+U 1 1 57E6D16E
+P 7050 4250
+F 0 "R11" V 6950 4200 50  0000 L CNN
+F 1 "270" V 7150 4200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 7050 4250 50  0001 C CNN
+F 3 "" H 7050 4250 50  0000 C CNN
+F 4 "Panasonic" H 7050 4250 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF2700V" H 7050 4250 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF2700V" H 7050 4250 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF2700V/?qs=sGAEpiMZZMtlubZbdhIBIGigBIB3A6R9SlfU%252b2Jcq8I%3d" H 7050 4250 60  0001 C CNN "[1] Dist Source"
+F 8 "Thick Film Resistors - SMD 0805 270ohms 1% AEC-Q200" H 7050 4250 60  0001 C CNN "Description"
+	1    7050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D1
+U 1 1 57E6DCD8
+P 7050 2750
+F 0 "D1" H 6950 2650 50  0000 L CNN
+F 1 "Red" H 6950 2850 50  0000 L CNN
+F 2 "LEDs:LED_0805" V 7050 2750 50  0001 C CNN
+F 3 "" V 7050 2750 50  0000 C CNN
+F 4 "Kingbright" H 7050 2750 60  0001 C CNN "Mfr"
+F 5 "AP2012EC" H 7050 2750 60  0001 C CNN "Mfr Part No"
+F 6 "604-AP2012EC" H 7050 2750 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/Search/ProductDetail.aspx?qs=VdjlWU%2fzoOFeVwl4qeUhTA%3d%3d" H 7050 2750 60  0001 C CNN "[1] Dist Source"
+	1    7050 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Photores R12
+U 1 1 57E6DCE4
+P 7450 3000
+F 0 "R12" V 7530 3000 50  0000 C CNN
+F 1 "Photores" V 7660 3000 50  0000 C TNN
+F 2 "Opto-Devices_4b11b4:Photocell_5528CDS" V 7380 3000 50  0001 C CNN
+F 3 "" H 7450 3000 50  0000 C CNN
+F 4 "unknown" H 7450 3000 60  0001 C CNN "Mfr"
+F 5 "5528CDS" H 7450 3000 60  0001 C CNN "Mfr Part No"
+F 6 "http://www.ebay.com/itm/271591239748?_trksid=p2059210.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" H 7450 3000 60  0001 C CNN "[1] Dist Source"
+F 7 "or Amazon" H 7450 3000 60  0001 C CNN "[2] Dist Source"
+	1    7450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R10
+U 1 1 57E6DCF0
+P 7050 3000
+F 0 "R10" V 6950 2950 50  0000 L CNN
+F 1 "270" V 7150 2950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 7050 3000 50  0001 C CNN
+F 3 "" H 7050 3000 50  0000 C CNN
+F 4 "Panasonic" H 7050 3000 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF2700V" H 7050 3000 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF2700V" H 7050 3000 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF2700V/?qs=sGAEpiMZZMtlubZbdhIBIGigBIB3A6R9SlfU%252b2Jcq8I%3d" H 7050 3000 60  0001 C CNN "[1] Dist Source"
+F 8 "Thick Film Resistors - SMD 0805 270ohms 1% AEC-Q200" H 7050 3000 60  0001 C CNN "Description"
+	1    7050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57E6EB44
+P 7050 4800
+F 0 "#PWR01" H 7050 4550 50  0001 C CNN
+F 1 "GND" H 7050 4650 50  0000 C CNN
+F 2 "" H 7050 4800 50  0000 C CNN
+F 3 "" H 7050 4800 50  0000 C CNN
+	1    7050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57E6F2F1
+P 7050 3550
+F 0 "#PWR02" H 7050 3300 50  0001 C CNN
+F 1 "GND" H 7050 3400 50  0000 C CNN
+F 2 "" H 7050 3550 50  0000 C CNN
+F 3 "" H 7050 3550 50  0000 C CNN
+	1    7050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R4
+U 1 1 57E74C85
+P 5000 2500
+F 0 "R4" H 5030 2520 50  0000 L CNN
+F 1 "10k" H 5030 2460 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5000 2500 50  0001 C CNN
+F 3 "" H 5000 2500 50  0000 C CNN
+F 4 "Panasonic" H 5000 2500 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1002V" H 5000 2500 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1002V" H 5000 2500 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1002V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDolsj86TE0MTY%3d" H 5000 2500 60  0001 C CNN "[1] Dist Source"
+	1    5000 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 57E74C8F
+P 5750 1900
+F 0 "R7" V 5673 1796 50  0000 L CNN
+F 1 "10k" V 5667 1958 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5750 1900 50  0001 C CNN
+F 3 "" H 5750 1900 50  0000 C CNN
+F 4 "Panasonic" H 5750 1900 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1002V" H 5750 1900 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1002V" H 5750 1900 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1002V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDolsj86TE0MTY%3d" H 5750 1900 60  0001 C CNN "[1] Dist Source"
+	1    5750 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L POT R_GAIN1
+U 1 1 57E74C99
+P 5300 1900
+F 0 "R_GAIN1" H 5300 1820 50  0000 C CNN
+F 1 "100k" H 5300 1900 50  0000 C CNN
+F 2 "Potentiometers_4b11b4:3362P" H 5300 1900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/54/362-776956.pdf" H 5300 1900 50  0001 C CNN
+F 4 "Bourns" H 5300 1900 60  0001 C CNN "Mfr"
+F 5 "3362P-1-104LF" H 5300 1900 60  0001 C CNN "Mfr Part No"
+F 6 "652-3362P-1-104LF" H 5300 1900 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Bourns/3362P-1-104LF/?qs=sGAEpiMZZMvygUB3GLcD7l39JMs%2f%2f%2fLOs09gVZSzi2c%3d" H 5300 1900 60  0001 C CNN "[1] Dist Source"
+	1    5300 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 57E75764
+P 4300 1900
+F 0 "#PWR03" H 4300 1750 50  0001 C CNN
+F 1 "VCC" H 4300 2050 50  0000 C CNN
+F 2 "" H 4300 1900 50  0000 C CNN
+F 3 "" H 4300 1900 50  0000 C CNN
+	1    4300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VEE #PWR04
+U 1 1 57E75AB4
+P 5600 2950
+F 0 "#PWR04" H 5600 2800 50  0001 C CNN
+F 1 "VEE" H 5600 3100 50  0000 C CNN
+F 2 "" H 5600 2950 50  0000 C CNN
+F 3 "" H 5600 2950 50  0000 C CNN
+	1    5600 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 57E75F8F
+P 5600 3500
+F 0 "#PWR05" H 5600 3350 50  0001 C CNN
+F 1 "VCC" H 5600 3650 50  0000 C CNN
+F 2 "" H 5600 3500 50  0000 C CNN
+F 3 "" H 5600 3500 50  0000 C CNN
+	1    5600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VEE #PWR06
+U 1 1 57E76057
+P 5600 4200
+F 0 "#PWR06" H 5600 4050 50  0001 C CNN
+F 1 "VEE" H 5600 4350 50  0000 C CNN
+F 2 "" H 5600 4200 50  0000 C CNN
+F 3 "" H 5600 4200 50  0000 C CNN
+	1    5600 4200
+	-1   0    0    1   
+$EndComp
+Text Label 6550 2600 2    60   ~ 0
+NON-INV
+Text Label 6350 3850 2    60   ~ 0
+INV
+$Comp
+L R_Small R5
+U 1 1 57E78815
+P 5000 3950
+F 0 "R5" H 5030 3970 50  0000 L CNN
+F 1 "10k" H 5030 3910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5000 3950 50  0001 C CNN
+F 3 "" H 5000 3950 50  0000 C CNN
+F 4 "Panasonic" H 5000 3950 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1002V" H 5000 3950 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1002V" H 5000 3950 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1002V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDolsj86TE0MTY%3d" H 5000 3950 60  0001 C CNN "[1] Dist Source"
+	1    5000 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 57E7881F
+P 5700 4600
+F 0 "R6" V 5623 4496 50  0000 L CNN
+F 1 "10k" V 5617 4658 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5700 4600 50  0001 C CNN
+F 3 "" H 5700 4600 50  0000 C CNN
+F 4 "Panasonic" H 5700 4600 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1002V" H 5700 4600 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1002V" H 5700 4600 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1002V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDolsj86TE0MTY%3d" H 5700 4600 60  0001 C CNN "[1] Dist Source"
+	1    5700 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L POT R_GAIN2
+U 1 1 57E78829
+P 5300 4600
+F 0 "R_GAIN2" H 5300 4520 50  0000 C CNN
+F 1 "100k" H 5300 4600 50  0000 C CNN
+F 2 "Potentiometers_4b11b4:3362P" H 5300 4600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/54/362-776956.pdf" H 5300 4600 50  0001 C CNN
+F 4 "Bourns" H 5300 4600 60  0001 C CNN "Mfr"
+F 5 "3362P-1-104LF" H 5300 4600 60  0001 C CNN "Mfr Part No"
+F 6 "652-3362P-1-104LF" H 5300 4600 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Bourns/3362P-1-104LF/?qs=sGAEpiMZZMvygUB3GLcD7l39JMs%2f%2f%2fLOs09gVZSzi2c%3d" H 5300 4600 60  0001 C CNN "[1] Dist Source"
+	1    5300 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 57E7E4DB
+P 5600 2250
+F 0 "#PWR07" H 5600 2100 50  0001 C CNN
+F 1 "VCC" H 5600 2400 50  0000 C CNN
+F 2 "" H 5600 2250 50  0000 C CNN
+F 3 "" H 5600 2250 50  0000 C CNN
+	1    5600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VEE #PWR08
+U 1 1 57E7EBDF
+P 4300 2500
+F 0 "#PWR08" H 4300 2350 50  0001 C CNN
+F 1 "VEE" H 4300 2650 50  0000 C CNN
+F 2 "" H 4300 2500 50  0000 C CNN
+F 3 "" H 4300 2500 50  0000 C CNN
+	1    4300 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 57E7F587
+P 4300 2050
+F 0 "R1" H 4330 2070 50  0000 L CNN
+F 1 "100k" H 4330 2010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4300 2050 50  0001 C CNN
+F 3 "" H 4300 2050 50  0000 C CNN
+F 4 "Panasonic" H 4300 2050 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1003V" H 4300 2050 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1003V" H 4300 2050 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1003V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDoyetWphK7CHM%3d" H 4300 2050 60  0001 C CNN "[1] Dist Source"
+	1    4300 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 57E7F625
+P 4300 2350
+F 0 "R2" H 4330 2370 50  0000 L CNN
+F 1 "100k" H 4330 2310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4300 2350 50  0001 C CNN
+F 3 "" H 4300 2350 50  0000 C CNN
+F 4 "Panasonic" H 4300 2350 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1003V" H 4300 2350 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1003V" H 4300 2350 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1003V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDoyetWphK7CHM%3d" H 4300 2350 60  0001 C CNN "[1] Dist Source"
+	1    4300 2350
+	-1   0    0    1   
+$EndComp
+Text Label 4600 2200 2    60   ~ 0
+VREF
+Text Label 7950 2400 2    60   ~ 0
+IN1
+Text Label 7950 3400 2    60   ~ 0
+OUT
+Text Label 7950 4450 2    60   ~ 0
+IN2
+$Comp
+L CONN_01X03 P2
+U 1 1 57E84BE6
+P 8650 3400
+F 0 "P2" H 8650 3600 50  0000 C CNN
+F 1 "CONN_01X03" V 8750 3400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8650 3400 50  0001 C CNN
+F 3 "" H 8650 3400 50  0000 C CNN
+	1    8650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 57E85AE7
+P 3500 3400
+F 0 "P1" H 3500 3600 50  0000 C CNN
+F 1 "CONN_01X03" V 3600 3400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3500 3400 50  0001 C CNN
+F 3 "" H 3500 3400 50  0000 C CNN
+	1    3500 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 57E85C9B
+P 4200 3250
+F 0 "#PWR09" H 4200 3100 50  0001 C CNN
+F 1 "VCC" H 4200 3400 50  0000 C CNN
+F 2 "" H 4200 3250 50  0000 C CNN
+F 3 "" H 4200 3250 50  0000 C CNN
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VEE #PWR010
+U 1 1 57E85E9C
+P 4200 3550
+F 0 "#PWR010" H 4200 3400 50  0001 C CNN
+F 1 "VEE" H 4200 3700 50  0000 C CNN
+F 2 "" H 4200 3550 50  0000 C CNN
+F 3 "" H 4200 3550 50  0000 C CNN
+	1    4200 3550
+	-1   0    0    1   
+$EndComp
+Text Label 4350 3400 2    60   ~ 0
+CV
+$Comp
+L R_Small R8
+U 1 1 57E86576
+P 6650 2800
+F 0 "R8" H 6680 2820 50  0000 L CNN
+F 1 "100k" H 6680 2760 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6650 2800 50  0001 C CNN
+F 3 "" H 6650 2800 50  0000 C CNN
+F 4 "Panasonic" H 6650 2800 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1003V" H 6650 2800 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1003V" H 6650 2800 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1003V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDoyetWphK7CHM%3d" H 6650 2800 60  0001 C CNN "[1] Dist Source"
+	1    6650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 57E866E9
+P 6650 3000
+F 0 "#PWR011" H 6650 2750 50  0001 C CNN
+F 1 "GND" H 6650 2850 50  0000 C CNN
+F 2 "" H 6650 3000 50  0000 C CNN
+F 3 "" H 6650 3000 50  0000 C CNN
+	1    6650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R9
+U 1 1 57E86783
+P 6650 4200
+F 0 "R9" H 6680 4220 50  0000 L CNN
+F 1 "100k" H 6680 4160 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6650 4200 50  0001 C CNN
+F 3 "" H 6650 4200 50  0000 C CNN
+F 4 "Panasonic" H 6650 4200 60  0001 C CNN "Mfr"
+F 5 "ERJ-6ENF1003V" H 6650 4200 60  0001 C CNN "Mfr Part No"
+F 6 "667-ERJ-6ENF1003V" H 6650 4200 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1003V/?qs=sGAEpiMZZMvdGkrng054tw5%2fFYq5P%2fDoyetWphK7CHM%3d" H 6650 4200 60  0001 C CNN "[1] Dist Source"
+	1    6650 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 57E86891
+P 6650 4400
+F 0 "#PWR012" H 6650 4150 50  0001 C CNN
+F 1 "GND" H 6650 4250 50  0000 C CNN
+F 2 "" H 6650 4400 50  0000 C CNN
+F 3 "" H 6650 4400 50  0000 C CNN
+	1    6650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT R_LED1
+U 1 1 57E88715
+P 7050 3300
+F 0 "R_LED1" H 7050 3220 50  0000 C CNN
+F 1 "POT" H 7050 3300 50  0000 C CNN
+F 2 "Potentiometers_4b11b4:3119P" H 7050 3300 50  0001 C CNN
+F 3 "" H 7050 3300 50  0000 C CNN
+F 4 "Bourns" H 7050 3300 60  0001 C CNN "Mfr"
+F 5 "3319P-1-102" H 7050 3300 60  0001 C CNN "Mfr Part No"
+F 6 "652-3319P-1-102" H 7050 3300 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Bourns/3319P-1-102/?qs=sGAEpiMZZMvygUB3GLcD7gTIXvDhNlCg6YoYt3XpZ8E%3d" H 7050 3300 60  0001 C CNN "[1] Dist Source"
+	1    7050 3300
+	0    -1   1    0   
+$EndComp
+$Comp
+L POT R_LED2
+U 1 1 57E89B5F
+P 7050 4550
+F 0 "R_LED2" H 7050 4470 50  0000 C CNN
+F 1 "POT" H 7050 4550 50  0000 C CNN
+F 2 "Potentiometers_4b11b4:3119P" H 7050 4550 50  0001 C CNN
+F 3 "" H 7050 4550 50  0000 C CNN
+F 4 "Bourns" H 7050 4550 60  0001 C CNN "Mfr"
+F 5 "3319P-1-102" H 7050 4550 60  0001 C CNN "Mfr Part No"
+F 6 "652-3319P-1-102" H 7050 4550 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Bourns/3319P-1-102/?qs=sGAEpiMZZMvygUB3GLcD7gTIXvDhNlCg6YoYt3XpZ8E%3d" H 7050 4550 60  0001 C CNN "[1] Dist Source"
+	1    7050 4550
+	0    -1   1    0   
+$EndComp
+Text HLabel 3800 3200 1    60   Input ~ 0
+VCC
+Wire Wire Line
+	3700 3400 3900 3400
+Wire Wire Line
+	3900 3400 4000 3400
+Wire Wire Line
+	4000 3400 4400 3400
+Wire Wire Line
+	4600 3400 4700 3400
+Wire Wire Line
+	5400 2700 5150 2700
+Wire Wire Line
+	5150 3750 5400 3750
+Wire Wire Line
+	7050 4100 7050 4150
+Wire Wire Line
+	7050 3850 7050 3900
+Wire Wire Line
+	7450 3250 7450 3400
+Wire Wire Line
+	7450 3400 7450 3900
+Wire Wire Line
+	7050 2850 7050 2900
+Wire Wire Line
+	7050 2600 7050 2650
+Wire Wire Line
+	7450 2400 7450 2750
+Wire Wire Line
+	7450 3400 8350 3400
+Wire Wire Line
+	8350 3400 8450 3400
+Wire Wire Line
+	7450 4400 7450 4450
+Wire Wire Line
+	7450 4450 8000 4450
+Connection ~ 7450 3400
+Wire Wire Line
+	7450 2400 8000 2400
+Wire Wire Line
+	6000 2600 6100 2600
+Wire Wire Line
+	6100 2600 6650 2600
+Wire Wire Line
+	6650 2600 7050 2600
+Wire Wire Line
+	5300 2050 5300 2500
+Wire Wire Line
+	5100 2500 5300 2500
+Wire Wire Line
+	5300 2500 5400 2500
+Connection ~ 5300 2500
+Wire Wire Line
+	5450 1900 5650 1900
+Wire Wire Line
+	5850 1900 6100 1900
+Wire Wire Line
+	6100 1900 6100 2600
+Wire Wire Line
+	5600 2300 5600 2250
+Wire Wire Line
+	5600 2900 5600 2950
+Wire Wire Line
+	5600 3500 5600 3550
+Wire Wire Line
+	5600 4200 5600 4150
+Wire Wire Line
+	4700 2500 4900 2500
+Connection ~ 6100 2600
+Wire Wire Line
+	6000 3850 6100 3850
+Wire Wire Line
+	6100 3850 6650 3850
+Wire Wire Line
+	6650 3850 7050 3850
+Wire Wire Line
+	4700 3950 4900 3950
+Wire Wire Line
+	5100 3950 5300 3950
+Wire Wire Line
+	5300 3950 5400 3950
+Wire Wire Line
+	5300 3950 5300 4450
+Connection ~ 5300 3950
+Wire Wire Line
+	5450 4600 5600 4600
+Wire Wire Line
+	5800 4600 6100 4600
+Wire Wire Line
+	6100 4600 6100 3850
+Connection ~ 6100 3850
+Wire Wire Line
+	4700 2500 4700 3400
+Wire Wire Line
+	4700 3400 4700 3950
+Connection ~ 4700 3400
+Wire Wire Line
+	4300 1900 4300 1950
+Wire Wire Line
+	4300 2150 4300 2200
+Wire Wire Line
+	4300 2200 4300 2250
+Wire Wire Line
+	4300 2450 4300 2500
+Wire Wire Line
+	4300 2200 4600 2200
+Connection ~ 4300 2200
+Wire Wire Line
+	8450 3300 8150 3300
+Wire Wire Line
+	8150 3300 8000 3300
+Wire Wire Line
+	8000 3300 8000 2400
+Wire Wire Line
+	8450 3500 8250 3500
+Wire Wire Line
+	8250 3500 8000 3500
+Wire Wire Line
+	8000 3500 8000 4450
+Wire Wire Line
+	3700 3300 3800 3300
+Wire Wire Line
+	3800 3300 4200 3300
+Wire Wire Line
+	4200 3300 4200 3250
+Wire Wire Line
+	4200 3550 4200 3500
+Wire Wire Line
+	4200 3500 3700 3500
+Wire Wire Line
+	6650 2700 6650 2600
+Connection ~ 6650 2600
+Wire Wire Line
+	6650 2900 6650 3000
+Wire Wire Line
+	6650 4100 6650 3850
+Connection ~ 6650 3850
+Wire Wire Line
+	6650 4400 6650 4300
+Wire Wire Line
+	7050 3150 7050 3100
+Wire Wire Line
+	7050 3500 6850 3500
+Wire Wire Line
+	6850 3500 6850 3300
+Wire Wire Line
+	6850 3300 6900 3300
+Wire Wire Line
+	7050 3500 7050 3550
+Wire Wire Line
+	7050 4400 7050 4350
+Wire Wire Line
+	6900 4550 6850 4550
+Wire Wire Line
+	6850 4550 6850 4750
+Wire Wire Line
+	6850 4750 7050 4750
+Wire Wire Line
+	7050 4750 7050 4800
+Wire Wire Line
+	3800 3200 3800 3300
+Connection ~ 3800 3300
+Text HLabel 3900 3150 1    60   Input ~ 0
+CV
+Text HLabel 4000 3150 1    60   Input ~ 0
+VEE
+Wire Wire Line
+	3900 3150 3900 3400
+Connection ~ 3900 3400
+Wire Wire Line
+	4000 3150 4000 3400
+Connection ~ 4000 3400
+Text HLabel 8150 3200 1    60   Input ~ 0
+IN1
+Text HLabel 8250 3200 1    60   Input ~ 0
+IN2
+Text HLabel 8350 3200 1    60   Input ~ 0
+OUT
+Wire Wire Line
+	8150 3200 8150 3300
+Connection ~ 8150 3300
+Wire Wire Line
+	8250 3200 8250 3500
+Connection ~ 8250 3500
+Wire Wire Line
+	8350 3200 8350 3400
+Connection ~ 8350 3400
+$EndSCHEMATC

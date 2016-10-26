@@ -1,0 +1,104 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green85\blue230;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15960\viewh13660\viewkind0
+\deftab720
+\pard\pardeftab720\ql\qnatural
+
+\f0\fs22 \cf0 Alex Rice's piezo preamp (http://www.alexrice.co.uk/content/piezo-preamp) is a great solution...  BUT, it's been offline since sometime in early 2011.  Before the site went down, I laid out a version of his preamp in CadSoft's Eagle PCB layout software and sent it to Alex to include on his site.  (His original design was done with Kicad in Win/Linux but since I'm a Mac user I couldn't open it.) He did, but then the site went down a few months later.\
+\
+Differences between my Eagle version and the Kicad original:\
+-  I laid it out using through-hole components on a small PCB to fit on the back of a 35mm piezo disc.  (He was using SMD components to fit into an XLR shell.)\
+- His site included a jpg of his schematic which I used to recreate the design in Eagle. I've never opened the Kicad files, so there may be differences that I don't know about. I've built it and it works, though.\
+\
+Alex Rice is soley responsible for the design of this preamp and I'm re-distributing everything in accordance with his Creative Commons Share-Alike 3.0 license.  Please read the license file in his original folder for details.\
+\
+Here is the text of his original site (recovered with the archive.org "Wayback Machine")\
+\
+--------------------------------------------------------------------\
+\
+\pard\pardeftab720\sa280\ql\qnatural
+
+\f1\b\fs28 \cf0 Piezo Preamplifier\
+\pard\pardeftab720\sa300\ql\qnatural
+
+\fs24 \cf0 What does it do?\
+\pard\pardeftab720\sa240\ql\qnatural
+
+\b0 \cf0 This is a high impedence phantom powered balanced preamplifier designed to make piezo contact microphones sound awesome although it could be used for any high impedence source such as guitar pickups. It takes a balanced high impedence input and produces a balanced low impedence output with around 20dB of gain using just 12 components (8 with some caveats).If you use SMT components it fits inside a male XLR jack shell using the PCB below.\
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 Schematic\
+\pard\pardeftab720\qc
+
+\b0 \cf0 \
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 How do I use it?\
+\pard\pardeftab720\sa240\ql\qnatural
+
+\b0 \cf0 XLR 1,2&3 are the outputs and connect to pins 1-3 of a male XLR plug. Pin 1 is ground the other two are the 'hot' balanced differential outputs. IN1 and IN2 are the inputs from your high impedence source, in the case of a piezo element that's the two wires connected to it. GND is the connection for the screen of the cable that goes to the piezo element. The element itself should be surrounded by a grounded shield such as a piece of copper foil. If you are using an unshielded piezo element then you may prefer to treat it as a single ended source and ground one side which will reduce hum pickup but sacrifice 6dB of gain. The cable to the preamp should ideally be short or the capacitance of the cable will start to affect frequency respsonse although actually I suspect that with it's balanced input it will actually work perfectly fine with cables up to a few metres.\
+To actually use it plug the XLR plug into a mixing desk (via an XLR cable) and turn on the phantom power. Prod the piezo element, you should hear something. Now go stick it to stuff round the house and you should hear many things; strange things.\
+If you plan on using this for a guitar then 12dB of gain (you loose 6dB by grounding one side) is likely to be too much in which case you could add source resistors (between the source of each FET and the current source). A pair of 2k resistors drop the gain to about 6dB, 3k resistors give 3dB. If you are using a single ended source like a guitar then tie one input to ground - the differential amplifier will still give much better performance than a single fet because it's output is balanced so hum rejection should be excellent.\
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 How does it work?\
+\pard\pardeftab720\sa240\ql\qnatural
+
+\b0 \cf0 It's design is at least slightly novel as far as I know and is the result of a lot of fiddling around with circuit simulators and breadboarded prototypes. The credit for the basic idea of putting a FET in a plug goes to {\field{\*\fldinst{HYPERLINK "http://web.archive.org/web/20090123091011/http://www.till.com/articles/PreampCable/"}}{\fldrslt \cf2 \ul \ulc2 J. Till}}.\
+It's basicly a standard FET differential amplifier with a couple of tricks to keep component count and noise down and input impedence up. It takes advantage of the fact that phantom power is fed to the balanced XLR inputs via pair of closely matched 6.81k resistors. These resistors are used directly as the drain resitors in the differential amplifier rather than the more usual method of connecting an additional pair of matched resistors to each line to create a +48V supply rail and then feeding the signal back through DC blocking capacitors. Since the mixing desk already blocks DC at it's inputs it's not a problem that the signal is floating at +45V or so.\
+Q1 and Q2 are differential pair. Q3 is a current source to improve CMRR by reducing the effect of Q1-Q2 not being precisely matched, this could be replaced with a current regulator diode (if you can source one) or a 22k resistor if you accept reduced performance (+22dB common mode noise for 10% matched FETs in theory, in practise it doesn't seem to make much difference). Together with the circuitry in the mixer they make a differential amplifier. The gain of the amplifier depends somewhat on the transconductance of the FETs themselves since it operates largely without feedback\
+C2 and C3 are DC blocking capacitors to stop the piezo element floating at ~25V, if the piezo is insulated you can dispense with them but they're so small that they're worth it for peace of mind - if the piezo touches a grounded object it'll create a huge bang which may hurt your speakers or your ears.\
+R1,R2,R5,R6 are the bias network for the fet inputs, R5 and R6 feed some of the output back to the input which increases gain and input resistance. R5 and R6 linearise the outputs of the FETs by applying a signal of Vgs/2 to the gate which both increases gain and reduces distortion. FETs without feedback mostly introduce 2nd harmonic distortion, if for some reason you _want_ this then increase R5 and R6 but if you increase it beyond about 10M you'll start to get some HF roll off.\
+C1 and R4 are a Zobel network to avoid oscillation in the mic cable. This idea came from Rod Elliott. If you plan on driving very long lengths of cable a pair of 220 Ohm resistors in series with the output would further reduce the risk of HF oscillations. If you do this they should be closely matched\
+\
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 Component Selection :\
+\pard\pardeftab720\sa240\ql\qnatural
+
+\b0 \cf0 Q1 and Q2 need to be a closely matched pair of N-channel FETs with an Idss of 1-2mA, a Vbr of at least 25V and low noise. This can either be a pair of separate devices (J201, 2N3819 etc.) matched by hand from a selection of devices or a single monolithic dual FET (2SK389, LSK389 etc. ). The latter offers significantly better performance but is more expensive and harder to source. FET matching can be done according to various methods, but I'd reccomend one like {\field{\*\fldinst{HYPERLINK "http://web.archive.org/web/20090123091011/http://www.nrgrecording.de/html/fetmachting.html"}}{\fldrslt \cf2 \ul \ulc2 this}} which matches them by Vgs for a particular Id, usually 50uA or so\
+My prototype was built using a pair of 2N3819s matched rather approximately by Idss to about 1mA and is very quiet using a shielded piezo element, but will pick up some hum if you touch the unshielded element, given that the hum pickup on a human can often be to the order of several volts thats not really surprising.\
+The source resistor for the current source needs to be selected to give the correct quiescent current. I think that the optimum for most FETs is about 0.5mA per FET but it's actually rather uncritical. More current means more gain and less noise but reduces the common mode rejection. Anything between about 0.1mA and 0.5mA per FET is fine. For a J201 this means 500 - 1k, for 2N3819 about 1k - 2k. Since parts with a lowish Vgs are preferred for the differential pair you could use the ones with a higher Vgs for the current source.\
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 Performance :\
+\pard\pardeftab720\sa240\ql\qnatural
+
+\b0 \cf0 This is a simulation of the preamp being fed by a typical piezo element which is represented by a voltage source in series with a 5nF capacitor, this is typical of a 15mm piezo disc. The FETs are matched to about 10%. It's driving a simulated 15m mic cable. As you can see the common mode gain (red line) is very low (about -80dB) and the differential mode gain (blue line) is about 20dB which is sufficient to get a decent signal from even very quiet sources (eg. footsteps on a concrete floor) without excessive noise from the pre-amps in the mixer. Frequency response is 20Hz - 30kHz (-3dB) but this is adjustable; gain at very low frequencies may be undesirable in which case you can reduce the values of R1,R2,R5 & R6 or use the low-cut button common on many mixers\
+\pard\pardeftab720\qc
+\cf0 \
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 How could I use it if I don't have a desk with Phantom Power?\
+\pard\pardeftab720\sa240\ql\qnatural
+
+\b0 \cf0 You'll need to make a breakout box containing some 9V batteries to provide power, a pair of 6k resistors and some DC blocking caps. You can select the current that through the FETs when you build the device, if you plan on running it off a battery (or from a battery powered device with phantom power) you may wish to reduce the quiescent current from the normal ~1mA, to about 0.1mA or less to increase battery life. This will increase noise by a few dB but that's unlikely to be a problem.\
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 PCB Layout :\
+\pard\pardeftab720\qc
+
+\b0 \cf0 \
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 My brother didn't think I could fit it inside an XLR plug. He was wrong. This is a tiny (11.5mm x 18mm, or about half the size of a postage stamp) PCB designed to fit inside a Neutrik XX series plug. The tab that sticks out of the pcb is going to be epoxy glued into a recess in the connector, holding the PCB firmly in place. Here's how it looks in situ.\
+\pard\pardeftab720\qc
+\cf0 \
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 Downloads :\
+\pard\pardeftab720\ql\qnatural
+
+\b0 \cf0 Eagle File\
+QUCS File\
+\pard\pardeftab720\sa300\ql\qnatural
+
+\b \cf0 Related Links :\
+\pard\pardeftab720\ql\qnatural
+{\field{\*\fldinst{HYPERLINK "http://web.archive.org/web/20090123091011/http://www.till.com/articles/PreampCable/index.html"}}{\fldrslt 
+\b0 \cf2 \ul \ulc2 The FET Preamp Cable}}
+\b0  - Inspiration for the preamp-in-a-cable idea\
+\pard\pardeftab720\ql\qnatural
+{\field{\*\fldinst{HYPERLINK "http://web.archive.org/web/20090123091011/http://sound.westhost.com/"}}{\fldrslt \cf2 \ul \ulc2 Elliott Sound Products}} - Lots of projects for the audio electronics hobbyist\
+\pard\pardeftab720\ql\qnatural
+{\field{\*\fldinst{HYPERLINK "http://web.archive.org/web/20090123091011/http://www.rhopointcomponents.com/main.asp?sitepages=HomePage"}}{\fldrslt \cf2 \ul \ulc2 Rhopoint Electronics}} - UK Suppliers for InterFET's range of audio FETs including monolithic pairs}

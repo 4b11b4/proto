@@ -1,0 +1,15 @@
+Multi-mode VCA
+
+Most panning VCAs are made up of 2 VCAs with a common control voltage inverted and offset for one of them: as the gain of one VCA goes up, the gain of the other goes down. This one works a little differently. Instead of the "traditional" structure, it's a single VCA that inverts one signal input and then add/subtracts one from the other as the CV varies. Although this arrangement cannot be configured as two independent VCAs, it is able to not only pan, but to also morph and cross-fade.
+
+Assume the trimpots are properly adjusted and initial CV is 0 volts. A signal on X in gets fed to the non inverting input of op amp A3 and appears at full level at Out 1. X in also goes to the inverting input of the 3080. As CV rises, X in begins to appear at the output of A2. Since the signal has been inverted twice, it's in-phase with X in but fed to A3's inverting input it subtracts from the signal on A3's non-inverting input. Simultaneously, the rising signal at A2 output is fed to A4's non-inverting input. As A3's output decreases, A4's output increases. Xin to Out1 is a reverse VCA and Xin to Out2 is a normal VCA. A signal on X will pan from Out1 to Out2.
+
+To do this with regular VCAs would require 2 VCAs and an inverter on CV.
+
+Y in to Out1 and Out2 functions in a similar manner, except, being fed to U1's non-inverting input, Y appears inverted at A2 out. It subtracts from the signal on A4 and, inverted again, appears at Out1. Y to Out2 is therefore a reverse VCA and Y to Out1 is a normal VCA. A signal on Y will pan from Out2 to Out1.
+
+If both inputs and one output are used, either output will fade or morph from Xin to Yin. If both inputs and both outputs are used, CV will cause X and Y to cross-fade: as X pans from Out1 to Out2, Y pans from Out2 to Out1 -- a segue. To patch this with ordinary VCAs would require four of them, plus two CV inverters, plus two 2-input mixers. That's a lot of hardware to tie up for a sometime effect that might leave one with no spare VCAs and/or mixers with which to do anything else. This circuit uses just 2 more op amps than a normal, one-function VCA. It might benefit from AC coupling on inputs and outputs.
+
+This was breadboarded, then built on a stripboard, but something distracted me and it didn't get installed in my modular. I can't explain the differences in resistor values around A3 and A4. They're what worked. Sorry, I don't remember the value of the resistor at the negative end of the "initial" pot. From its location I recall that the Initial range had to include slightly negative voltage. Try 200K with a 100K pot. I used an LM348 for A1-4, but most any quad opamp will do. I am considering kludging my Eµ Dual VCAs into a similar configuration. Here are TWO un-tested schematics using an LM13600 or 13700 instead of a CA3080.
+
+© Richard Curcio, 2009 

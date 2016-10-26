@@ -1,0 +1,115 @@
+Cmp-Mod V01 Created by Cvpcb (2007-11-29-a) date = 1/5/2008-14:53:05
+
+BeginCmp
+TimeStamp = 47CD6537;
+Reference = C3;
+ValeurCmp = 220p;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD5072;
+Reference = GND1;
+ValeurCmp = CONNECTOR;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD5044;
+Reference = IN+1;
+ValeurCmp = CONNECTOR;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD4DB8;
+Reference = IN-1;
+ValeurCmp = CONNECTOR;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD4AEC;
+Reference = Q1;
+ValeurCmp = FET_N;
+IdModule  = SOT23DSG;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD4B22;
+Reference = Q2;
+ValeurCmp = FET_N;
+IdModule  = SOT23SDG;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD4B74;
+Reference = Q3;
+ValeurCmp = FET_N;
+IdModule  = SOT23DSG;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD4B9A;
+Reference = R2;
+ValeurCmp = 1M5;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD4BA0;
+Reference = R3;
+ValeurCmp = 1M5;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD4BA5;
+Reference = R4;
+ValeurCmp = 1M5;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD4BA8;
+Reference = R5;
+ValeurCmp = 1M5;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD6569;
+Reference = R6;
+ValeurCmp = 120R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 4819D4C7;
+Reference = R7;
+ValeurCmp = SOT;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD5069;
+Reference = XLR1;
+ValeurCmp = CONNECTOR;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD505B;
+Reference = XLR2;
+ValeurCmp = CONNECTOR;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = 47CD5052;
+Reference = XLR3;
+ValeurCmp = CONNECTOR;
+IdModule  = PINTST;
+EndCmp
+
+EndListe

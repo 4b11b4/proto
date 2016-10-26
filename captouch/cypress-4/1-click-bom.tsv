@@ -1,0 +1,18 @@
+References	Qty	Description	Digikey	Mouser	RS	Newark	Farnell
+C1	1	1uF 0805 X5R					
+C2	1	C Small 0.1uF Unpolarized capacitor 1206 HandSoldering					
+C3	1	C Small 2.2nF Unpolarized capacitor 0603 HandSoldering					
+P2, P1	2	CONN 01X02 Connector, single row, 01x02 Pin Header Straight 1x02					
+P12	1	CONN 01X04 Connector, single row, 01x04 Pin Header Straight 1x04					
+P13, P15, P9, P11, P3, P5, P6, P7, P8	9	CONN 01X01 Connector, single row, 01x01 Pin Header Straight 1x01					
+P16, P14, P10, P4	4	CONN 01X03 Connector, single row, 01x03 Pin Header Straight 1x03					
+R1	1	R Small 60 Resistor, small symbol 1206 HandSoldering					
+R2, R3, R4, R5	4	R Small 560 Resistor, small symbol 1206 HandSoldering					
+R6	1	R Small 4k Resistor, small symbol 1206 HandSoldering					
+R7	1	R Small 2k Resistor, small symbol 1206 HandSoldering					
+R8	1	R Small 1k Resistor, small symbol 1206 HandSoldering					
+R9	1	R Small 5.1k Resistor, small symbol 1206 HandSoldering					
+R10	1	R Small 1.5k Resistor, small symbol 1206 HandSoldering					
+R11	1	R Small 0 Resistor, small symbol 1206 HandSoldering					
+R12	1	R Small 5k Resistor, small symbol 1206 HandSoldering					
+U1	1	CY8CMBR2044					

@@ -1,0 +1,376 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:piezo_preamp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C_Small C1
+U 1 1 57E24387
+P 5150 3650
+F 0 "C1" H 5160 3720 50  0000 L CNN
+F 1 "220p" H 5160 3570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5150 3650 50  0001 C CNN
+F 3 "" H 5150 3650 50  0000 C CNN
+F 4 "Yageo" H 5150 3650 60  0001 C CNN "Mfr"
+F 5 "CC0805JRNPO9BN221" H 5150 3650 60  0001 C CNN "Mfr Part No"
+F 6 "603-CC805JRNPO9BN221" H 5150 3650 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/CC0805JRNPO9BN221/?qs=sGAEpiMZZMs0AnBnWHyRQMMzfhmH8IQXEOWb2kWhQGs%3d" H 5150 3650 60  0001 C CNN "[1] Dist Source"
+F 8 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 220pF 50V NPO 5%" H 5150 3650 60  0001 C CNN "Description"
+	1    5150 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 57E2447B
+P 5350 3300
+F 0 "R1" H 5380 3320 50  0000 L CNN
+F 1 "3M" H 5380 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5350 3300 50  0001 C CNN
+F 3 "" H 5350 3300 50  0000 C CNN
+F 4 "Yageo" H 5350 3300 60  0001 C CNN "Mfr"
+F 5 "RC0805FR-073ML" H 5350 3300 60  0001 C CNN "Mfr Part No"
+F 6 "603-RC0805FR-073ML" H 5350 3300 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/RC0805FR-073ML/?qs=sGAEpiMZZMu61qfTUdNhG6gKAQVNBKOocXHiFtEp%2fQg%3d" H 5350 3300 60  0001 C CNN "[1] Dist Source"
+	1    5350 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3400 5350 3850
+Wire Wire Line
+	5250 3650 5450 3650
+Connection ~ 5350 3650
+$Comp
+L Q_NJFET_DGS Q1
+U 1 1 57E24501
+P 5650 3650
+F 0 "Q1" H 5950 3700 50  0000 R CNN
+F 1 "2N3819" H 6150 3600 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 5850 3750 50  0001 C CNN
+F 3 "" H 5650 3650 50  0000 C CNN
+F 4 "Central Semiconductor" H 5650 3650 60  0001 C CNN "Mfr"
+F 5 "2N3819" H 5650 3650 60  0001 C CNN "Mfr Part No"
+F 6 "610-2N3819" H 5650 3650 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Central-Semiconductor/2N3819/?qs=sGAEpiMZZMutXGli8Ay4kAHmCxIxFTXSHfCId7bMyjI%3d" H 5650 3650 60  0001 C CNN "[1] Dist Source"
+	1    5650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 57E248A9
+P 5350 3950
+F 0 "R2" H 5380 3970 50  0000 L CNN
+F 1 "3M" H 5380 3910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5350 3950 50  0001 C CNN
+F 3 "" H 5350 3950 50  0000 C CNN
+F 4 "Yageo" H 5350 3950 60  0001 C CNN "Mfr"
+F 5 "RC0805FR-073ML" H 5350 3950 60  0001 C CNN "Mfr Part No"
+F 6 "603-RC0805FR-073ML" H 5350 3950 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/RC0805FR-073ML/?qs=sGAEpiMZZMu61qfTUdNhG6gKAQVNBKOocXHiFtEp%2fQg%3d" H 5350 3950 60  0001 C CNN "[1] Dist Source"
+	1    5350 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 57E24944
+P 6400 3250
+F 0 "C2" H 6410 3320 50  0000 L CNN
+F 1 "220p" H 6410 3170 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6400 3250 50  0001 C CNN
+F 3 "" H 6400 3250 50  0000 C CNN
+F 4 "Yageo" H 6400 3250 60  0001 C CNN "Mfr"
+F 5 "CC0805JRNPO9BN221" H 6400 3250 60  0001 C CNN "Mfr Part No"
+F 6 "603-CC805JRNPO9BN221" H 6400 3250 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/CC0805JRNPO9BN221/?qs=sGAEpiMZZMs0AnBnWHyRQMMzfhmH8IQXEOWb2kWhQGs%3d" H 6400 3250 60  0001 C CNN "[1] Dist Source"
+F 8 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 220pF 50V NPO 5%" H 6400 3250 60  0001 C CNN "Description"
+	1    6400 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 57E249F4
+P 6000 3250
+F 0 "R3" H 6030 3270 50  0000 L CNN
+F 1 "150" H 6030 3210 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6000 3250 50  0001 C CNN
+F 3 "" H 6000 3250 50  0000 C CNN
+F 4 "Yageo" H 6000 3250 60  0001 C CNN "Mfr"
+F 5 "RC0805FR-07150RL" H 6000 3250 60  0001 C CNN "Mfr Part No"
+F 6 "603-RC0805FR-07150RL" H 6000 3250 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/RC0805FR-07150RL/?qs=sGAEpiMZZMtlubZbdhIBIBEZimkhVqQ4XyHz6I0XRc4%3d" H 6000 3250 60  0001 C CNN "[1] Dist Source"
+	1    6000 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 3250 5900 3250
+Wire Wire Line
+	5750 2850 5750 3450
+Wire Wire Line
+	6100 3250 6300 3250
+Wire Wire Line
+	5350 3200 5350 3050
+Wire Wire Line
+	5350 3050 5750 3050
+Connection ~ 5750 3250
+$Comp
+L Q_NJFET_DGS Q3
+U 1 1 57E24CAE
+P 6750 3650
+F 0 "Q3" H 7050 3700 50  0000 R CNN
+F 1 "2N3819" H 7250 3600 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6950 3750 50  0001 C CNN
+F 3 "" H 6750 3650 50  0000 C CNN
+F 4 "Central Semiconductor" H 6750 3650 60  0001 C CNN "Mfr"
+F 5 "2N3819" H 6750 3650 60  0001 C CNN "Mfr Part No"
+F 6 "610-2N3819" H 6750 3650 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Central-Semiconductor/2N3819/?qs=sGAEpiMZZMutXGli8Ay4kAHmCxIxFTXSHfCId7bMyjI%3d" H 6750 3650 60  0001 C CNN "[1] Dist Source"
+	1    6750 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3250 6500 3250
+Wire Wire Line
+	6650 2850 6650 3450
+Wire Wire Line
+	5750 3850 5750 4050
+Wire Wire Line
+	5750 4050 6650 4050
+Wire Wire Line
+	6650 4050 6650 3850
+$Comp
+L Q_NJFET_DGS Q2
+U 1 1 57E24DED
+P 6100 4350
+F 0 "Q2" H 6400 4400 50  0000 R CNN
+F 1 "2N3819" H 6600 4300 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6300 4450 50  0001 C CNN
+F 3 "" H 6100 4350 50  0000 C CNN
+F 4 "Central Semiconductor" H 6100 4350 60  0001 C CNN "Mfr"
+F 5 "2N3819" H 6100 4350 60  0001 C CNN "Mfr Part No"
+F 6 "610-2N3819" H 6100 4350 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Central-Semiconductor/2N3819/?qs=sGAEpiMZZMutXGli8Ay4kAHmCxIxFTXSHfCId7bMyjI%3d" H 6100 4350 60  0001 C CNN "[1] Dist Source"
+	1    6100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4150 6200 4050
+Connection ~ 6200 4050
+Wire Wire Line
+	5900 4350 5750 4350
+Wire Wire Line
+	5750 4350 5750 5200
+Wire Wire Line
+	5350 4050 5350 4950
+Wire Wire Line
+	5350 4950 7050 4950
+Connection ~ 5750 4950
+$Comp
+L R_Small R4
+U 1 1 57E25184
+P 6200 4750
+F 0 "R4" H 6230 4770 50  0000 L CNN
+F 1 "1k" H 6230 4710 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6200 4750 50  0001 C CNN
+F 3 "" H 6200 4750 50  0000 C CNN
+F 4 "Yageo" H 6200 4750 60  0001 C CNN "Mfr"
+F 5 "RC0805FR-071KL" H 6200 4750 60  0001 C CNN "Mfr Part No"
+F 6 "603-RC0805FR-071KL" H 6200 4750 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL/?qs=sGAEpiMZZMtlubZbdhIBINUJ4p5cMnF1Rv8sEVwr4ss%3d" H 6200 4750 60  0001 C CNN "[1] Dist Source"
+	1    6200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4850 6200 5200
+Wire Wire Line
+	6200 4650 6200 4550
+$Comp
+L R_Small R6
+U 1 1 57E253BE
+P 7050 3950
+F 0 "R6" H 7080 3970 50  0000 L CNN
+F 1 "3M" H 7080 3910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 7050 3950 50  0001 C CNN
+F 3 "" H 7050 3950 50  0000 C CNN
+F 4 "Yageo" H 7050 3950 60  0001 C CNN "Mfr"
+F 5 "RC0805FR-073ML" H 7050 3950 60  0001 C CNN "Mfr Part No"
+F 6 "603-RC0805FR-073ML" H 7050 3950 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/RC0805FR-073ML/?qs=sGAEpiMZZMu61qfTUdNhG6gKAQVNBKOocXHiFtEp%2fQg%3d" H 7050 3950 60  0001 C CNN "[1] Dist Source"
+	1    7050 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3650 7150 3650
+Wire Wire Line
+	7050 3400 7050 3850
+Wire Wire Line
+	7050 4950 7050 4050
+Connection ~ 6200 4950
+$Comp
+L C_Small C3
+U 1 1 57E257BB
+P 7250 3650
+F 0 "C3" H 7260 3720 50  0000 L CNN
+F 1 "220p" H 7260 3570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7250 3650 50  0001 C CNN
+F 3 "" H 7250 3650 50  0000 C CNN
+F 4 "Yageo" H 7250 3650 60  0001 C CNN "Mfr"
+F 5 "CC0805JRNPO9BN221" H 7250 3650 60  0001 C CNN "Mfr Part No"
+F 6 "603-CC805JRNPO9BN221" H 7250 3650 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/CC0805JRNPO9BN221/?qs=sGAEpiMZZMs0AnBnWHyRQMMzfhmH8IQXEOWb2kWhQGs%3d" H 7250 3650 60  0001 C CNN "[1] Dist Source"
+F 8 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 220pF 50V NPO 5%" H 7250 3650 60  0001 C CNN "Description"
+	1    7250 3650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7050 3650
+Wire Wire Line
+	5050 3650 4650 3650
+Text Label 4650 3650 0    60   ~ 0
+PZ-IN1
+Wire Wire Line
+	7350 3650 7800 3650
+Text Label 7800 3650 2    60   ~ 0
+PZ-IN2
+$Comp
+L R_Small R5
+U 1 1 57E25EDD
+P 7050 3300
+F 0 "R5" H 7080 3320 50  0000 L CNN
+F 1 "3M" H 7080 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 7050 3300 50  0001 C CNN
+F 3 "" H 7050 3300 50  0000 C CNN
+F 4 "Yageo" H 7050 3300 60  0001 C CNN "Mfr"
+F 5 "RC0805FR-073ML" H 7050 3300 60  0001 C CNN "Mfr Part No"
+F 6 "603-RC0805FR-073ML" H 7050 3300 60  0001 C CNN "[1] Dist Part No"
+F 7 "http://www.mouser.com/ProductDetail/Yageo/RC0805FR-073ML/?qs=sGAEpiMZZMu61qfTUdNhG6gKAQVNBKOocXHiFtEp%2fQg%3d" H 7050 3300 60  0001 C CNN "[1] Dist Source"
+	1    7050 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3200 7050 3050
+Wire Wire Line
+	7050 3050 6650 3050
+Connection ~ 6650 3250
+Wire Wire Line
+	5750 5200 5350 5200
+Wire Wire Line
+	6200 5200 6450 5200
+Text Label 6450 5200 2    60   ~ 0
+XLR1
+Text Label 5350 5200 0    60   ~ 0
+PZ-GND
+Connection ~ 5750 3050
+Text Label 5500 2850 0    60   ~ 0
+XLR2
+Wire Wire Line
+	5750 2850 5500 2850
+Wire Wire Line
+	6650 2850 6900 2850
+Connection ~ 6650 3050
+Text Label 6900 2850 2    60   ~ 0
+XLR3
+$Comp
+L CONN_01X01 P1
+U 1 1 57E26FAC
+P 4450 3650
+F 0 "P1" H 4450 3750 50  0000 C CNN
+F 1 "CONN_01X01" V 4550 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4450 3650 50  0001 C CNN
+F 3 "" H 4450 3650 50  0000 C CNN
+	1    4450 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 57E277F4
+P 5300 2850
+F 0 "P3" H 5300 2950 50  0000 C CNN
+F 1 "CONN_01X01" V 5400 2850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5300 2850 50  0001 C CNN
+F 3 "" H 5300 2850 50  0000 C CNN
+	1    5300 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 57E27860
+P 7100 2850
+F 0 "P5" H 7100 2950 50  0000 C CNN
+F 1 "CONN_01X01" V 7200 2850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 7100 2850 50  0001 C CNN
+F 3 "" H 7100 2850 50  0000 C CNN
+	1    7100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 57E27950
+P 8000 3650
+F 0 "P6" H 8000 3750 50  0000 C CNN
+F 1 "CONN_01X01" V 8100 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 8000 3650 50  0001 C CNN
+F 3 "" H 8000 3650 50  0000 C CNN
+	1    8000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 57E27A1E
+P 6650 5200
+F 0 "P4" H 6650 5300 50  0000 C CNN
+F 1 "CONN_01X01" V 6750 5200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 6650 5200 50  0001 C CNN
+F 3 "" H 6650 5200 50  0000 C CNN
+	1    6650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 57E27B2F
+P 5150 5200
+F 0 "P2" H 5150 5300 50  0000 C CNN
+F 1 "CONN_01X01" V 5250 5200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 5150 5200 50  0001 C CNN
+F 3 "" H 5150 5200 50  0000 C CNN
+	1    5150 5200
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
