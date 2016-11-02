@@ -3,7 +3,7 @@
   (general
     (links 10)
     (no_connects 0)
-    (area 135.724999 100.324999 152.875001 109.075001)
+    (area 132.616667 96.245 157.175 111.075)
     (thickness 1.6)
     (drawings 8)
     (tracks 25)
@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x011fc_80000001)
+      (layerselection 0x010fc_80000001)
       (usegerberextensions true)
       (usegerberattributes true)
       (excludeedgelayer true)
@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerb/))
+      (outputdirectory azo1_gerb/))
   )
 
   (net 0 "")

@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x011fc_80000001)
+      (layerselection 0x010fc_80000001)
       (usegerberextensions true)
       (usegerberattributes true)
       (excludeedgelayer true)
@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory /home/ab/src/proto/captouch/cypress-4/gerb/))
+      (outputdirectory /home/ab/src/proto/captouch/cypress-4/cyp4_gerb/))
   )
 
   (net 0 "")
