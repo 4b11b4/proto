@@ -68,7 +68,7 @@
       (usegerberextensions true)
       (usegerberattributes true)
       (excludeedgelayer true)
-      (linewidth 0.050000)
+      (linewidth 0.100000)
       (plotframeref false)
       (viasonmask false)
       (mode 1)
@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory /home/ab/src/proto/captouch/cypress-10/gerb/))
+      (outputdirectory /home/ab/src/proto/captouch/cypress-10/cyp10_gerb/))
   )
 
   (net 0 "")
