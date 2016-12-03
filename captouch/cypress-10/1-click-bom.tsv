@@ -1,0 +1,16 @@
+References	Qty	Description
+C1	1	C Small 0.1uF 1206 HandSoldering
+C2	1	C Small 1uF 1206 HandSoldering
+C3	1	C Small 2.2nF 0603 HandSoldering
+P1, P2	2	CONN 01X02 Pin Header Straight 1x02
+P4	1	CONN 01X10 Pin Header Straight 1x10
+P11, P15, P8, P10, P6, P17, P21, P18, P22, P12, P16, P5, P3, P23, P24, P25, P26, P27, P28, P29, P30, P31	22	CONN 01X01 Pin Header Straight 1x01
+P13, P9, P7, P19, P20, P14	6	CONN 01X03 Pin Header Straight 1x03
+R1, R2, R3, R5, R7, R9, R10, R8, R6, R4	10	R Small 560 1206 HandSoldering
+R11	1	R Small 60 1206 HandSoldering
+R12	1	R Small 1.65k 1206 HandSoldering
+R13	1	R Small 470 1206 HandSoldering
+R14	1	R Small 820 1206 HandSoldering
+R15, R19, R21, R17	4	R Small 5.1k 1206 HandSoldering
+R16, R20, R22, R18	4	R Small 1.5k 1206 HandSoldering
+U1	1	CY8CMBR2010 QFN-32-1EP 5x5mm Pitch0.5mm 4b11b4
